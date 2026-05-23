@@ -5,7 +5,7 @@ A deep learning-powered web application for automated **Diabetic Retinopathy (DR
 ## Live Demo
 
 Deployment Link:
-[Diabetic Retinopathy Web App Live Demo](https://diabetic-retinopathy-by-deepta.streamlit.app/?utm_source=chatgpt.com)
+[Diabetic Retinopathy Web App Live Demo](https://diabetic-retinopathy-by-deepta.streamlit.app)
 
 ## Features
 
@@ -151,7 +151,7 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Developed by [Deepta Das](https://github.com/Deepta-Das?utm_source=chatgpt.com)
+Developed by [Deepta Das](https://github.com/Deepta-Das)
 
 ## Support
 
