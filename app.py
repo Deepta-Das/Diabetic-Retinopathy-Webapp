@@ -328,30 +328,46 @@ def main():
             # GRAD-CAM
             # -------------------------------------------------
 
+            # -------------------------------------------------
+            # AI ATTENTION MAP
+            # -------------------------------------------------
+            
             st.subheader(
-                "Grad-CAM Visualization"
+                "🩺 AI Attention Map"
             )
-
+            
+            st.markdown(
+                """
+                The highlighted regions below show the retinal areas the AI model focused on 
+                most strongly while making its prediction. 
+                
+                - 🔴 Red/Yellow regions → High attention
+                - 🔵 Blue/Dark regions → Low attention
+                
+                This helps visualize which retinal features influenced the diagnosis.
+                """
+            )
+            
             try:
-
+            
                 gradcam_image = generate_gradcam(
                     image,
                     model,
                     device
                 )
-
+            
                 st.image(
                     gradcam_image,
-                    caption="Grad-CAM Heatmap",
+                    caption="Model Focus Visualization",
                     use_container_width=True
                 )
-
+            
             except Exception as e:
-
+            
                 st.error(
-                    f"Grad-CAM Error: {e}"
+                    f"Visualization Error: {e}"
                 )
-
+            
 # =========================================================
 # RUN APP
 # =========================================================
